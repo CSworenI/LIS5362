@@ -1,0 +1,106 @@
+#home {
+	cursor: url('../images/home.svg'),
+	auto !important;
+}
+
+a, summary {
+	cursor: pointer;
+}
+
+header, footer {
+	background-color: darkblue;
+	color: rgb(96, 165, 250) !important;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	display: flex;
+}
+
+header {
+	top: 0;
+	padding: -10px;
+}
+
+header a:visited {
+	color: rgb(96, 165, 250) !important;
+}
+
+footer {
+	bottom: 0;
+}
+
+#body {
+	margin-top: 60px;
+	margin-bottom: 55px;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+summary, h2 {
+    font-size: 1.2em;
+	margin: .25em
+}
+
+.button {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #60A5FA;
+	background-color: white;
+	width: 150px;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 2px;
+	border-color: hsl(213,94,68);
+	border-radius: 0.5rem
+}
+
+#body {
+	color: darkblue;
+	text-align: center;
+	align-items: center !important;
+}
+
+.card {
+	margin: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 0.5rem;
+}
+
+.tradingCard {
+	height: 300px;
+	cursor: not-allowed;
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: width, height;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+    /* Standard syntax */
+    transition-property: width, height;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.tradingCard:hover {
+	height: 600px;
+}
+
+@media screen and (max-height: 700px) {
+	.tradingCard { 
+		height: 150px;
+	}
+
+	.tradingCard:hover {
+		height: 300px;
+	}
+}
+
+.description {
+	inline-size: 168px;
+	overflow-wrap: break-word;
+}
